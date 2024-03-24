@@ -1,21 +1,21 @@
-.container{
+/* .container{
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	gap: 2rem;
 }
 /* grabs all the children in the container */
-.container > *{
+/* .container > *{
 
-}
+} */
 
-.container-img{
+/* .container-img{
 	flex: 1 5 35%;
 }
 
 .container-form{
 	flex: 1 0 65%;
-}
+} */
 
 
 
@@ -62,3 +62,6 @@
   
   /* make outlines of sections gradient 
   from #406e62 to #99bdaa*/
+
+
+
