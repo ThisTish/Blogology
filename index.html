@@ -21,24 +21,28 @@
 		<div id="img">
 			<img src="assets/Images/icons.jpg" alt="Abstract art with bright colorful layered circles(jawbreakers cut in half)">
 		</div>
-		
+
 		<div>
 			<h2>What do you have to say?</h2> 
- 			<form id="form">
-				<div>
-					<label for="name">Username:</label>
-					<input type="text" name="Username" required />
-				</div>
-				<div>
-					<label for="title">Title</label>
-					<input type="text" name="Title" required />
-				</div>
-				<div>
-					<label for="content">Content</label>
-					<input type="text" name="Content" required />
-				</div>
-				<!-- change this to actual deployed page when deployed -->
-				<a href="file:///C:/Users/tisht/bootcamp/Blogology/blog.html"><button type="submit">Post!</button></a>
+ 			<form action="blog.html" method="post">
+				<ul>
+					<li>
+						<!-- <textarea id="name" name="username" required>username</textarea> -->
+						<label for="name">Username:</label>
+						<input type="text" id="name" name="username" required />
+					</li>			
+					<li>
+						<label for="title">Title:</label>
+						<input type="text" id="title" name="title" required />
+					</li>					
+					<li>
+						<label for="content">Content:</label>
+						<textarea type="text" id="content" name="Content" required></textarea>
+					</li>
+					<li>	<!-- change this to actual deployed page when deployed -->
+					<a href="file:///C:/Users/tisht/bootcamp/Blogology/blog.html"><button type="submit">Post!</button></a>
+					</li>
+				</ul>
 			</form>
 		</div>	
 	</main>
