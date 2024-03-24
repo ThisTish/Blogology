@@ -1,3 +1,25 @@
 body{
 	background-color: aqua;
 }
+
+
+
+.icon{
+	width: 2rem;
+	height: auto;
+	background-image: url('/assets/Images/blightbulb.png');
+	background-size: cover;
+	background-position: center;
+}
+/* button i::before{
+	content: url('assets/images/blightbulb.png');
+
+} */
+
+/* .bluelight{
+	content: url('assets/Images/blightbulb.png');
+} */
+
+/* .toggle i::before{
+	content: url('assets\Images\blightbulb.png');
+} */
