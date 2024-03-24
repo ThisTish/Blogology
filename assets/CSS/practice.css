@@ -1,21 +1,22 @@
-/* .container{
+.main{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	gap: 2rem;
 }
-/* grabs all the children in the container */
-/* .container > *{
+/* grabs all the children in the main */
+.main > *{ 
+	flex: 1;
 
-} */
+} 
 
-/* .container-img{
+.main-img{
 	flex: 1 5 35%;
 }
 
-.container-form{
+.main-form{
 	flex: 1 0 65%;
-} */
+}
 
 
 

@@ -14,30 +14,33 @@
 <body>
 	<header>
 		<h1>Blogology</h1>
+		<button type="button">image</button>
 	</header>
-	<!-- add <main>  -->
-	<div id = "image">
-		<img src="assets/Images/icons.jpg" alt="Abstract art with bright colorful layered circles(jawbreakers cut in half)">
-	</div>
-	<h2>What do you have to say?</h2>
-
- 
- 	<form>
-		<div>
-			<label for="name">Username:</label>
-			<input type="text" name="Username" required />
+	
+	<main class="main">
+		<div id="img">
+			<img src="assets/Images/icons.jpg" alt="Abstract art with bright colorful layered circles(jawbreakers cut in half)">
 		</div>
+		
 		<div>
-			<label for="title">Title</label>
-			<input type="text" name="Title" required />
-		</div>
-		<div>
-			<label for="content">Content</label>
-			<input type="text" name="Content" required />
-		</div>
-		<button type="submit">Post!</button>
-
- 	</form>
+			<h2>What do you have to say?</h2> 
+ 			<form id="form">
+				<div>
+					<label for="name">Username:</label>
+					<input type="text" name="Username" required />
+				</div>
+				<div>
+					<label for="title">Title</label>
+					<input type="text" name="Title" required />
+				</div>
+				<div>
+					<label for="content">Content</label>
+					<input type="text" name="Content" required />
+				</div>
+				<button type="submit">Post!</button>
+			</form>
+		</div>	
+	</main>
 
 	<footer>
 		<a href="https://tishthegoat.github.io/Tish_portfolio/">Have a look at my portfolio...</a>

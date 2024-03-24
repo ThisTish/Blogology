@@ -1,41 +1,63 @@
 * {
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* background colors not working */
-  
-  header{
-	  margin: auto;
-	  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	  background-color: #f5c60f;
-	  padding: 0;
-	  margin: 0;
-  }
-  
-  body {
+}
+
+body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: #eadfc1;
-	}
-  
-  footer {
-		background-color: #9cd18b;
-		padding: 10px;
-  }
-  
-  h1{
-	  font-size: 5rem;
-	  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  
-  h2{
-	  font-size: 4rem;
-	  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+}
 
-  label{
+header{
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	background-color: #fdc04b;
+	border-bottom: .5rem dotted #f47f88;
+	color: #296055;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+}
+
+h1{
+	font-size: 5rem;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	margin: 0;
+}
+
+.main{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.main *{
+	flex: 1;
+}
+
+#img{
+	border-right: .5rem dotted #f47f88;
+	/* border-bottom: .5rem dotted #f47f88; */
+}
+
+h2{
+	  font-size: 3rem;
+	  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	  color: #65b0a5;
+} 
+
+label{
 	  font-size: 1rem;
 	  font-family: 'Times New Roman', Times, serif;
-  }
+}
 
+footer {
+		background-color: #9cd18b;
+		padding: 10px;
+}
+	
+	
+	/* #form{
+		border-bottom: .5rem dotted #f47f88;
+	} */
+	
