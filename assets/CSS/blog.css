@@ -11,7 +11,16 @@ body{
 	background-size: cover;
 	background-position: center;
 }
-/* button i::before{
+
+/* ? for java, add to this?
+
+#blogs{
+} */
+
+
+
+/*todo adding img to toggle button. Needs to go in style.css
+ button i::before{
 	content: url('assets/images/blightbulb.png');
 
 } */

@@ -51,16 +51,16 @@ form li{
 }
 
 h2{
-	  font-size: 3rem;
-	  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	  color: #65b0a5;
-	  text-align: center;
+	font-size: 3rem;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: #65b0a5;
+	text-align: center;
 } 
 
 label{
-	  font-size: 1rem;
-	  font-family: 'Times New Roman', Times, serif;
-	  display: block;
+	font-size: 1rem;
+	font-family: 'Times New Roman', Times, serif;
+	display: block;
 }
 
 input{
@@ -89,13 +89,24 @@ textarea:focus{
 	border: .1rem outset aqua;	
 }
 
-/* #content{
-
-} */
-
-
 footer {
 	background-color: #9cd18b;
 	padding: 10px;
 }
 
+/* ? used in java, does it need to be here too?
+
+#name{
+}
+
+#title{
+}
+
+#content{
+}
+
+#postBtn{
+	font-weight: 100;
+}
+
+*/

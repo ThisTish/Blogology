@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 /* part of button for light and dark icon */
 class="icon" id="toggleButton">light or dark</button>
 .main{
@@ -26,45 +37,45 @@ class="icon" id="toggleButton">light or dark</button>
 * {
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
-  }
-  
+}
+
   /* background colors not working */
-  
-  header{
-	  margin: auto;
-	  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	  background-color: #f5c60f;
-  }
-  
-  body {
+
+header{
+	margin: auto;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	background-color: #f5c60f;
+}
+
+body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: #eadfc1;
 	}
-  
-  footer {
+
+footer {
 		background-color: #9cd18b;
 		padding: 10px;
-  }
-  
-  h1{
-	  font-size: 50rem;
-	  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  
-  h2{
-	  font-size: 40rem;
-	  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+}
+
+h1{
+	font-size: 50rem;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+	font-size: 40rem;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
   /* not changing anything */
-  label{
-	  font-size: 10rem;
-	  font-family: 'Times New Roman', Times, serif;
-  }
-  
-  
-  /* make outlines of sections gradient 
-  from #406e62 to #99bdaa*/
+label{
+	font-size: 10rem;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* make outlines of sections gradient 
+from #406e62 to #99bdaa*/
 
 
 
