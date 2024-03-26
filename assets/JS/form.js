@@ -1,29 +1,53 @@
-const form = document.querySelector('form')
-const nameInput = document.querySelector('#name');
-const titleInput = document.querySelector('#title');
-const contentInput = document.querySelector('#content');
+const nameInp = document.getElementById("name");
+const titleInp = document.getElementById("title");
+const contentInp = document.getElementById("content");
+const submitBtn = document.getElementById("postBtn");
 
-const postBtn = document.querySelector('#postBtn');
+
+
+// const form = document.querySelector('form')
+// const nameInput = document.querySelector('#name');
+// const titleInput = document.querySelector('#title');
+// const contentInput = document.querySelector('#content');
+
+// const postBtn = document.querySelector('#postBtn');
 
 const tempArray = [];
 
-form.addEventListener('submit', (event) => {
-	event.preventDefault();
-	const makeBlog = new FormData(form);
-	const blog = {};
-	makeBlog.forEach((value,key) => {
-		blog[key] = value;
-	});
-	tempArray.push(blog);
-	console.log(tempArray);
-	const string = JSON.stringify(tempArray);
-	localStorage.setItem('form', string);
+submitBtn.addEventListener('click', function(submitForm){
+	submitForm.preventDefault();
+	const name = nameInp.value;
+	const title = titleInp.value;
+	const content = contentInp.value;
+	
+	const blogData = { name, title, content};
+
+	tempArray.push(blogData);
+	
+	const arrayString = JSON.stringify(tempArray);
+
+	localStorage.setItem('blogArray', arrayString);
+	// ? change to actual url?
+	window.location.href = 'blog.html';
+});
+
+
+
+// form.addEventListener('submit', (event) => {
+// 	event.preventDefault();
+// 	const makeBlog = new FormData(form);
+// 	const blog = {};
+// 	makeBlog.forEach((value,key) => {
+// 		blog[key] = value;
+// 	});
+// 	tempArray.push(blog);
+// 	console.log(tempArray);
+// 	const string = JSON.stringify(tempArray);
+// 	localStorage.setItem('form', string);
 	
 
-// ? change to actual url?
-	window.location.href = 'blog.html';
 
-})
+// })
 
 
 
