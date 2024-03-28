@@ -6,14 +6,14 @@
 body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: #eadfc1;
+	background-color: var(--background);
 }
 
 header{
 	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	background-color: #fdc04b;
-	border-bottom: .5rem dotted #f47f88;
-	color: #296055;
+	background-color: var(--header);
+	border-bottom: .5rem dotted var(--border);
+	color: var(--header-font);
 	display: flex;
 	flex-wrap: wrap-reverse;
 	justify-content: center;
@@ -21,7 +21,7 @@ header{
 
 h1{
 	font-size: 5rem;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	margin: 0;
 }
 
@@ -36,7 +36,7 @@ h1{
 }
 
 #img{
-	border-right: .5rem dotted #f47f88;
+	border-right: .5rem dotted var(--border);
 	text-align: center;
 	/* border-bottom: .5rem dotted #f47f88; */
 }
@@ -53,7 +53,7 @@ form li{
 h2{
 	font-size: 3rem;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	color: #65b0a5;
+	color: var(--headers);
 	text-align: center;
 } 
 
@@ -70,7 +70,7 @@ input{
 	height: 2rem;
 	box-sizing: border-box;
 	/* play with border styles later */
-	border: .2rem inset red;
+	border: .2rem inset var(--borders);
 }
 
 textarea{
@@ -80,33 +80,20 @@ textarea{
 	height: 30rem;
 	box-sizing: border-box;
 	/* play with border styles later */
-	border: .2rem inset red;
+	border: .2rem inset var(--borders);
 	resize: none;
 }
 
 input:focus,
 textarea:focus{
-	border: .1rem outset aqua;	
+	border: .2rem groove var(--focused);	
 }
 
 footer {
-	background-color: #9cd18b;
+	background-color: var(--footer);
 	padding: 10px;
 }
 
-/* ? used in java, does it need to be here too?
-
-#name{
+label{
+	color: var(--text);
 }
-
-#title{
-}
-
-#content{
-}
-
-#postBtn{
-	font-weight: 100;
-}
-
-*/

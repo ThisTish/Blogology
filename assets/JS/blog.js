@@ -5,7 +5,7 @@ console.log(blogsArray);
 
 for(let i = 0; i < blogsArray.length; i++){
 	const newBlog = blogsArray[i];
-	
+
 	const newCard = document.createElement('li');
 		
 	const header = document.createElement('h4');

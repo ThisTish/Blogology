@@ -1,3 +1,18 @@
+:root{
+	--background: #eadfc1;
+	--header: #fdc04b;
+	--header-font: #296055;
+	--border: #f47f88;
+	--footer: #9cd18b;
+	--borders: #fd8701;
+	--focused: #dad789;
+	--text: #ff6c3b;
+	--headers: #65b0a5;
+}
+
+
+
+
 */
 
 html, body, div, span, applet, object, iframe,
