@@ -1,24 +1,19 @@
-const getArray = localStorage.getItem('blogArray');
-const blogsArray = JSON.parse(getArray);
+
+const blogsArray = JSON.parse(localStorage.getItem('blogs'));
 const cardList = document.getElementById('blog');
 console.log(blogsArray);
-console.log(getArray)
-
-let currentArray=[];
 
 for(let i = 0; i < blogsArray.length; i++){
-	const currentBlog = blogsArray[i];
-console.log(blogsArray)
-	console.log(currentBlog)
+	const newBlog = blogsArray[i];
+	
 	const newCard = document.createElement('li');
 		
 	const header = document.createElement('h4');
-	header.textContent = currentBlog.title;
+	header.textContent = newBlog.title;
 	const blog = document.createElement('p');
-	blog.textContent = currentBlog.content;
+	blog.textContent = newBlog.content;
 	const author = document.createElement('footer')
-	author.textContent = `written by ${currentBlog.name}`
-	// console.log(currentBlog.name)
+	author.textContent = `written by ${newBlog.name}`
 
 	newCard.appendChild(header);
 	newCard.appendChild(blog);
@@ -26,18 +21,15 @@ console.log(blogsArray)
 
 	cardList.appendChild(newCard);
 
-	currentArray.push(blogsArray);
-	console.log(currentArray)
+	updatedString = JSON.stringify(blogsArray);
+	console.log(updatedString)
 
-	currentString = JSON.stringify(currentArray);
-	console.log(currentString)
-
-	localStorage.setItem('blogArray',currentString)
+	localStorage.setItem('blogs',updatedString)
 	
 }
 
 
-// blogsArray.push(currentBlog)
+// blogsArray.push(newBlog)
 
 
 
@@ -52,7 +44,7 @@ console.log(blogsArray)
 // 	// blogCards.forEach(blogCard =>{
 
 // 	for (let i = 0; i < blogCards.length; i++) {
-// 		const currentBlog = blogCards[i];
+// 		const newBlog = blogCards[i];
 // 		const newBlog = document.createElement('li');
 		
 // 		const header = document.createElement('h4');
@@ -67,10 +59,10 @@ console.log(blogsArray)
 // 		console.log(username)
 // 		// blogList.appendChild(newBlog)
 // 		console.log(newBlog);
-// 		currentBlog.appendChild(newBlog)
-// 		currentBlog.appendChild(header);
-// 		currentBlog.appendChild(blogContent);
-// 		currentBlog.appendChild(username);
+// 		newBlog.appendChild(newBlog)
+// 		newBlog.appendChild(header);
+// 		newBlog.appendChild(blogContent);
+// 		newBlog.appendChild(username);
 		
 // 		console.log(blogCards);
 // 		console.log(blogList); 	
