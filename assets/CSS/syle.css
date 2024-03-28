@@ -1,4 +1,5 @@
 :root{
+
 	--background: #eadfc1;
 	--header: #fdc04b;
 	--header-font: #296055;
@@ -9,8 +10,17 @@
 	--text: #ff6c3b;
 	--headers: #65b0a5;
 }
-
-
+.darkmode{
+	--background: #15203e;
+	--header: #056458;
+	--header-font: #2cadde;
+	--border: #0aa384;
+	--footer: #592f81;
+	--borders: #0678fb;
+	--focused: #5fa50f;
+	--text: #a64b58;
+	--headers: #d34e4e;
+}
 
 
 */

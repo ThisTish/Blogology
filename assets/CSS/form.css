@@ -58,9 +58,10 @@ h2{
 } 
 
 label{
-	font-size: 1rem;
+	font-size: 1.25rem;
 	font-family: 'Times New Roman', Times, serif;
 	display: block;
+	color: #f48197;
 }
 
 input{
@@ -70,7 +71,8 @@ input{
 	height: 2rem;
 	box-sizing: border-box;
 	/* play with border styles later */
-	border: .2rem inset var(--borders);
+	border: .3rem inset var(--borders);
+	background-color: #c2dec8;
 }
 
 textarea{
@@ -80,8 +82,9 @@ textarea{
 	height: 30rem;
 	box-sizing: border-box;
 	/* play with border styles later */
-	border: .2rem inset var(--borders);
+	border: .3rem inset var(--borders);
 	resize: none;
+	background-color: #c2dec8;
 }
 
 input:focus,
@@ -94,6 +97,11 @@ footer {
 	padding: 10px;
 }
 
-label{
-	color: var(--text);
+footer a{
+	color: #1ba492;
+}
+
+#postBtn{
+	background-color: #f48197;
+	color: var(--background);
 }
