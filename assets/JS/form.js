@@ -3,7 +3,9 @@ const titleInp = document.getElementById("title");
 const contentInp = document.getElementById("content");
 const submitBtn = document.getElementById("postBtn");
 
-
+const getStrings = localStorage.getItem('blogArray');
+const getArrays = JSON.parse(getStrings)
+console.log(getArrays)
 
 // const form = document.querySelector('form')
 // const nameInput = document.querySelector('#name');
@@ -25,12 +27,19 @@ submitBtn.addEventListener('click', function(submitForm){
 	tempArray.push(blogData);
 	
 	const arrayString = JSON.stringify(tempArray);
+	console.log(tempArray)
+
 
 	localStorage.setItem('blogArray', arrayString);
 	// ? change to actual url?
 	window.location.href = 'blog.html';
 });
 
+getArrays.push(tempArray)
+console.log(getArrays)
+const newStrings = JSON.stringify(getArrays)
+console.log(newStrings)
+localStorage.setItem('newBlogs', newStrings)
 
 
 // form.addEventListener('submit', (event) => {

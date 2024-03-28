@@ -15,7 +15,7 @@
 
 const tempArray = [];
 
-submitBtn.addEventListener('click', function(submitForm){
+submitBtn.addEventListener('click', function(submitForm)){
 	submitForm.preventDefault();
 	const name = nameInp.value;
 	const title = titleInp.value;
@@ -29,7 +29,7 @@ submitBtn.addEventListener('click', function(submitForm){
 
 	localStorage.setItem('blogArray', arrayString);
 
-
+}
 // *below is from video, above it making it fit for what i need
 //*above is added in to form.js
 // submitBtn.addEventListener('click', function(submitForm){

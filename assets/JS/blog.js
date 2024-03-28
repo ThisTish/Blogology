@@ -2,14 +2,18 @@ const getArray = localStorage.getItem('blogArray');
 const blogsArray = JSON.parse(getArray);
 const cardList = document.getElementById('blog');
 console.log(blogsArray);
+console.log(getArray)
+
+let currentArray=[];
+
 for(let i = 0; i < blogsArray.length; i++){
 	const currentBlog = blogsArray[i];
+console.log(blogsArray)
 	console.log(currentBlog)
 	const newCard = document.createElement('li');
 		
 	const header = document.createElement('h4');
 	header.textContent = currentBlog.title;
-
 	const blog = document.createElement('p');
 	blog.textContent = currentBlog.content;
 	const author = document.createElement('footer')
@@ -21,9 +25,19 @@ for(let i = 0; i < blogsArray.length; i++){
 	newCard.appendChild(author);
 
 	cardList.appendChild(newCard);
-	
-	}
 
+	currentArray.push(blogsArray);
+	console.log(currentArray)
+
+	currentString = JSON.stringify(currentArray);
+	console.log(currentString)
+
+	localStorage.setItem('blogArray',currentString)
+	
+}
+
+
+// blogsArray.push(currentBlog)
 
 
 
