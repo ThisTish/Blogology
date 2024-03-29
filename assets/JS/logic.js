@@ -1,33 +1,66 @@
-// // todo light/dark toggle
+// todo light/dark toggle
 
-// let darkMode = localStorage.getItem('darkMode');
-// const toggleBtn = document.querySelector('#toggleBtn');
-
-
-// // todo walk through and match up with html & css after styling.
+let darkMode = localStorage.getItem('darkMode');
+const toggleBtn = document.querySelector('#toggleBtn');
+const image = document.querySelector('#lightDarkImg');
 
 
+// todo walk through and match up with html & css after styling.
+
+const turnDark = ()=> {
+	document.documentElement.classList.add('darkMode');
+	localStorage.setItem('darkMode','dark');
+	image.src = "assets/Images/darkIcons.png";
+}
+
+const turnLight = ()=>{
+	document.documentElement.classList.remove('darkMode');
+	localStorage.setItem('darkMode', 'light');
+	image.src = "assets/images/icons.jpg";
+}
+
+if(darkMode === 'dark'){
+	turnDark();
+}
+else{
+	turnLight();
+}
+
+toggleBtn.addEventListener('click', ()=>{
+	darkMode = localStorage.getItem('darkMode');
+	if(darkMode !== 'dark'){
+		turnDark();
+	}
+	else{
+		turnLight();
+	}
+	
+});
+
+document.documentElement.classList.toggle('darkmode')
 // const turnDarkMode = () =>{
 
-// document.body.classList.add('darkMode');
+// document.documentelement.classList.add('darkMode');
 
-// localStorage.setItem('darkMode', 'enabled')
+// localStorage.setItem('darkMode', 'dark')
 // }
 
 // const turnLightMode = () => {
 
 // 	document.body.classList.remove('darkMode');
 	
-// 	localStorage.setItem('darkMode', 'disabled');
+// 	localStorage.setItem('darkMode', 'light');
 // };
 
-// if(darkMode === 'enabled'){
+// if(darkMode === 'dark'){
 // 	turnDarkMode();
 // }
 
 // toggleBtn.addEventListener('click', () => {
 // 	darkMode = localStorage.getItem('darkMode');
-// 	if(darkMode !== 'enabled'){
+// 	console.log('clicked');
+// 	darkMode = localStorage.getItem('darkMode');
+// 	if(darkMode !== 'dark'){
 // 		turnDarkMode();
 // 	}
 // 	else{
