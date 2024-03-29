@@ -68,7 +68,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* todo create dark mode, need to revert image and make colors off of that */
+
 #toggleBtn{
 	background-color: transparent;
 	border: 0;

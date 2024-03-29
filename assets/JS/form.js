@@ -15,7 +15,7 @@ submitBtn.addEventListener('click', function(submitForm){
 	const content = contentInp.value;
 	
 
-	// ?change this back to const blogData={name, title, content};
+	
 	let blogData = { 
 		"name": name,
 		"title":title,
@@ -26,6 +26,6 @@ submitBtn.addEventListener('click', function(submitForm){
 	
 
 	localStorage.setItem('blogs', JSON.stringify( previousBlogs));
-	// ? change to actual url?
+	
 	window.location.href = 'blog.html';
 });

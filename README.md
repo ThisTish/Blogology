@@ -10,4 +10,4 @@ https://tishthegoat.github.io/Blogology/
 
 ![alt text](assets/Images/blogs-light.png)!
 
-[alt text](assets/Images/blogs-dark.png)
+![alt text](assets/Images/blogs-dark.png)!
