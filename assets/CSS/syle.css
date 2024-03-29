@@ -10,17 +10,19 @@
 	--text: #ff6c3b;
 	--headers: #65b0a5;
 }
+
+
 .darkMode{
-	--background: #15203e;
-	--header: #056458;
-	--header-font: #2cadde;
-	--border: #0aa384;
-	--footer: #592f81;
-	--borders: #0678fb;
-	--focused: #5fa50f;
-	--text: #a64b58;
-	--headers: #d34e4e;
-}
+	--background: #15203b;
+	--header: #03203c;
+	--header-font: #d6f6dd;
+	--border: #0b71a1;
+	--footer: #63264a;
+	--borders: #02c39a;
+	--focused: #252e54;
+	--text: #009688;
+	--headers: #9a9a9a;
+	}
 
 
 */
