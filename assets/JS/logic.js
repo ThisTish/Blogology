@@ -8,11 +8,15 @@ toggleBtn.addEventListener('click', ()=>{
 	if(darkModeOn){
 		image.src = "assets/Images/darkIcons.png";
 		toggleBtn.textContent = "🌻";
+		toggleBtn.ariaLabel = 'sunflower';
+		toggleBtn.title = 'lightMode';
 
 	}
 	else{
-		image.src = 'assets/Images/icons.jpg'
+		image.src = "assets/Images/icons.jpg";
 		toggleBtn.textContent = "🕶️";
+		toggleBtn.ariaLabel ="sunglasses";
+		toggleBtn.title = "darkMode";
 	}
 
 });

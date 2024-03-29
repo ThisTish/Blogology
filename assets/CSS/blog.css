@@ -1,14 +1,11 @@
+
 body{
+	margin: 0;
 	background-color: var(--background);
 }
 
 header{
-	background-color: var(--header);
-	border-bottom: .5rem dotted var(--border);
-	color: var(--header-font);
-	display: flex;
-	flex-wrap: wrap-reverse;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 h1{
