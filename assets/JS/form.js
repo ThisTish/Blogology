@@ -12,12 +12,15 @@ submitBtn.addEventListener('click', function(submitForm){
 	
 	if(!nameInp.value){
 		alert('Please enter your username')
+		return
 	}
-	if(!title.value){
+	if(!titleInp.value){
 		alert('Please enter a title')
+		return
 	}
-	if(!content.value){
+	if(!contentInp.value){
 		alert('Please enter content')
+		return
 	}
 	
 
