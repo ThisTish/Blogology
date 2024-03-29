@@ -16,11 +16,16 @@ toggleBtn.addEventListener('click', ()=>{
 	if(darkModeOn){
 		console.log('dark')
 		image.src = "assets/Images/darkIcons.png";
+		toggleBtn.textContent = "🌻";
+
 	}
 	else{
 		console.log('light')
 		image.src = 'assets/images/icons.jpg'
+		toggleBtn.textContent = "🕶️";
 	}
+
+	// if(toggleBtn.textContent === '⛱️')
 })
 	// const turnDark = ()=> {
 	// 	document.body.classList.add('darkMode');

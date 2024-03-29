@@ -70,5 +70,7 @@ table {
 }
 /* todo create dark mode, need to revert image and make colors off of that */
 #toggleBtn{
-	color: transparent;
+	background-color: transparent;
+	border: 0;
+	font-size: 2rem;
 }
